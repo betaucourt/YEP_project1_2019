@@ -1,0 +1,161 @@
+.name-container {
+    background-color: inherit;
+    border: solid;
+    border-radius: 8px;
+    border-color: gray;
+    padding: 5px;
+}
+
+.name {
+    background-color: inherit;
+    width: 100%;
+    padding-left: 10px;
+    border: none;
+    font-family: Pattaya;
+    font-style: normal;
+    font-weight: normal;
+    color: black;
+    font-size: 20px;
+}
+
+.name:focus {
+    outline: none;
+}
+
+.members {
+    background-color: inherit;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.members > div {
+    background-color: inherit;
+    display: inline-flex;
+}
+
+.members p {
+    background-color: inherit;
+    font-family: Pattaya;
+    font-style: normal;
+    font-weight: normal;
+    color: black;
+    font-size: 25px;
+}
+
+.members > .avatar {
+    background-color: inherit;
+    height: 50px;
+    width: 50px;
+}
+
+.checklist {
+    background-color: inherit;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.checklist > p {
+    background-color: inherit;
+    font-family: Pattaya;
+    font-style: normal;
+    font-weight: normal;
+    color: black;
+    font-size: 25px;
+}
+
+.checklist > .checklist-item {
+    background-color: inherit;
+    border: solid;
+    border-radius: 8px;
+    border-color: gray;
+    padding: 5px;
+    margin-top: -2px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.checklist > .checklist-item input {
+    background-color: inherit;
+    width: 95%;
+    padding-left: 10px;
+    border: none;
+    font-family: Pattaya;
+    font-style: normal;
+    font-weight: normal;
+    color: black;
+    font-size: 20px;
+}
+
+.checklist > .checklist-item input:focus {
+    outline: none;
+}
+
+.check-state {
+    background-color: inherit;
+    border: solid;
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.finished {
+    background-color: #96EE90;
+}
+
+.checklist > .delete-container {
+    background-color: inherit;
+}
+
+.checklist .delete {
+    background-color: inherit;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+.checklist > .add-container {
+    background-color: inherit;
+}
+
+.checklist .add {
+    background-color: inherit;
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+    border: solid;
+    border-color: gray;
+    margin-top: -2px;
+}
+
+.button-container {
+    background-color: inherit;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    background-color: inherit;
+    font-family: Pattaya;
+    font-style: normal;
+    font-weight: normal;
+    color: black;
+    font-size: 25px;
+    border: solid;
+    border-radius: 8px;
+    width: 150px;
+    padding: 5px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.button:hover {
+    background-color: #c4c4c4;
+}

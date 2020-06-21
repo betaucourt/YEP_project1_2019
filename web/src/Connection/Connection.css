@@ -1,0 +1,222 @@
+.connection-Input-Email[type=email] {
+  height: 50px;
+  width: 90%;
+  padding-left: 10px;
+  margin-bottom: 30px;
+
+  background: #DAE9FF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  font-family: Yanone;
+  font-style: normal;
+  font-weight: normal;
+  color: black;
+  font-size: 32px;
+}
+
+.connection-Input-Password[type=password] {
+  height: 50px;
+  width: 90%;
+  padding-left: 10px;
+  margin-bottom: 0px;
+
+  background: #DAE9FF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  font-family: Yanone;
+  font-style: normal;
+  font-weight: normal;
+  color: black;
+  font-size: 32px;
+}
+
+.connection-left {
+  background-color: #FFFFFF;
+  border-bottom-left-radius: 12px;
+  border-top-left-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  border-right: 1.5px solid #BBBBBB;
+  width: 40%;
+  height: 80vh;
+  position: relative;
+}
+
+.connection-right {
+  background-color: #FFFFFF;
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  border-left: 1.5px solid #BBBBBB;
+  width: 40%;
+  height: 80vh;
+}
+
+.connection-title {
+  background-color: inherit;
+  font-family: Pattaya;
+  font-style: normal;
+  font-weight: normal;
+  color: black;
+  font-size: 38px;
+  display: inline-flex;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.connection-error-text {
+  background-color: inherit;
+  color: red;
+  font-family: Yanone;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  margin-left: 38px;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.connection-img {
+  max-width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  animation-name: action-animation;
+  animation-duration: 2s;
+  animation-delay:1s;
+  /* animation-iteration-count: infinite; */
+  animation-fill-mode: forwards;
+}
+
+.connection-button-signup {
+  float: right;
+  background-color: white;
+  border: 3px solid #000000;
+  border-radius: 50px;
+  color: black;
+  cursor: pointer;
+  text-align: center;
+  margin: auto;
+  text-align: center;
+
+  transition-duration: 0.3s;
+
+  color: black;
+  font-family: Pattaya;
+  font-style: normal;
+  font-weight: normal;
+  color: black;
+  font-size: 38px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.connection-button-signup:hover {
+  /* border:3px solid black; */
+  background-color: black;
+  color: white;
+}
+
+.connection-button-signup:active {
+  border:3px solid #BBB;
+  background-color: #BBB;
+  color: white;
+  transition-duration: 0.1s;
+}
+
+.connection-buttons-space {
+  margin: 0 auto;
+  width: 90%;
+  background-color: inherit;
+}
+
+
+.connection-button-signin {
+  width: 35%;
+  float: left;
+  background-color: white;
+  border: 3px solid #000000;
+  border-radius: 50px;
+  color: black;
+  cursor: pointer;
+  text-align: center;
+  margin-right: 5px;
+  margin-top: 25px;
+
+  transition-duration: 0.3s;
+
+  color: black;
+  font-family: Pattaya;
+  font-style: normal;
+  font-weight: normal;
+  color: black;
+  font-size: 1.8vw;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.connection-button-signin:hover {
+  /* border:3px solid black; */
+  background-color: black;
+  color: white;
+}
+
+.connection-button-signin:active {
+  border:3px solid #BBB;
+  background-color: #BBB;
+  color: white;
+  transition-duration: 0.1s;
+}
+
+.connection-button-google-login {
+  width: 60%;
+  /* float: right; */
+  background-color: white;
+  background: url("../assets/google_logo.png");
+  background-position: right;
+  background-position: 10px;
+  background-color: white;
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+
+  border: 3px solid #000000;
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: right;
+  margin-left: 5px;
+  margin-top: 25px;
+
+
+  transition-duration: 0.3s;
+
+  color: black;
+  font-family: Pattaya;
+  font-style: normal;
+  font-weight: normal;
+  color: black;
+  font-size: 1.8vw;
+  padding-left: 30px;
+  padding-right: 50px;
+}
+
+.connection-button-google-login:hover {
+  /* border:3px solid black; */
+  background-color: black;
+  color: white;
+}
+
+.connection-button-google-login:active {
+  border:3px solid #BBB;
+  background-color: #BBB;
+  color: white;
+  transition-duration: 0.1s;
+}

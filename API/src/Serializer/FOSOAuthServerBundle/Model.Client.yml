@@ -1,0 +1,9 @@
+FOS\OAuthServerBundle\Model\Client:
+    exclusion_policy: ALL
+    properties:
+        randomId:
+            expose: true
+            read_only: true
+        allowedGrantTypes:
+            expose: true
+        max-depth: 1

@@ -1,0 +1,15 @@
+fos_user:
+    db_driver:              orm
+    firewall_name:          main
+    user_class:             App\Entity\User
+    group:
+        group_class:        App\Entity\Group
+    service:
+        mailer:             fos_user.mailer.noop
+    from_email:
+        address:            noreply@myapp.fr
+        sender_name:        MyApp
+
+    registration:
+        form:
+            type:           App\Form\RegistrationType

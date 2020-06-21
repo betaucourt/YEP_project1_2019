@@ -1,0 +1,383 @@
+
+body
+
+.fav-button {
+    background-color: inherit;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    vertical-align: text-bottom;
+    margin-right: 10px;
+}
+
+.board-title {
+    background-color: inherit;
+    font-family: Pattaya;
+    font-style: normal;
+    font-weight: normal;
+    color: black;
+    font-size: 50px;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mid-header {
+    background-color: inherit;
+    display: inline;
+    margin: auto;
+    margin-left: 30%;
+}
+
+.right-header {
+    background-color: inherit;
+    display: inline;
+    float: right;
+    margin-right: 10px;
+}
+
+.username {
+    background-color: inherit;
+    font-family: Pattaya;
+    font-style: normal;
+    font-weight: normal;
+    color: black;
+    font-size: 50px;
+    display: inline;
+}
+
+.avatar {
+    background-color: inherit;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    vertical-align: bottom;
+}
+
+.settings {
+    background-color: inherit;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    vertical-align: bottom;
+}
+
+.logout {
+    background-color: inherit;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    vertical-align: bottom;
+}
+
+.body {
+    display: flex;
+    flex-direction: row;
+    /*border: solid;*/
+    align-items: stretch;
+    height: 91vh;
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    margin: 10px;
+    margin-bottom: 5px;
+    color: white;
+    background-color: white;
+    border-radius: 8px;
+    border: solid;
+    border-color: white;
+}
+
+.feed {
+    display: flex;
+    flex-direction: column;
+    flex: 11;
+    background-color: inherit;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-snap-type: proximity;
+    scroll-snap-align: end;
+}
+
+.message {
+    background-color: inherit;
+    display: inline-flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.message > .avatar-container {
+    flex: 1;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 40px;
+    height: auto;
+    background-color: inherit;
+    margin-left: 5px;
+    margin-bottom: 8px;
+}
+
+.message > .avatar-container > .avatar {
+    width: 100%;
+    max-width: 40px;
+    height: auto;
+    background-color: inherit;
+}
+
+.message > .text-container {
+    flex: 9;
+    background-color: #D4D4D4;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.message > .text-container > .text {
+    background-color: inherit;
+    font-family: Pattaya;
+    font-style: normal;
+    font-weight: normal;
+    color: black;
+    font-size: 30px;
+    margin: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.chat-input {
+    flex: 1;
+    background-color: inherit;
+    border-top: solid;
+    border-color: #C4C4C4;
+    margin-top: 8px;
+    margin-left: -3px;
+    margin-right: -3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-input > input {
+    background-color: #D4D4D4;
+    height: 75%;
+    width: 93%;
+    padding: 12px 19px;
+    margin: 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: Pattaya;
+    font-style: normal;
+    font-weight: normal;
+    color: black;
+    font-size: 30px;
+}
+
+.chat-input > input:focus {
+    outline: none;
+}
+
+.board {
+    flex: 9;/*
+    border: solid;
+    border-color: red;*/
+    margin-right: 20px;
+}
+
+.category {
+    margin-left: 30px;
+}
+
+.category > .title {
+    color: white;
+    font-family: Pattaya;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    display: inline-flex;
+    flex: 1;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.category-title {
+    background-color: inherit;
+    padding-left: 10px;
+    border: none;
+    font-family: Pattaya;
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+    font-size: 40px;
+}
+
+.category-title::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+}
+  
+.category-title:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+}
+  
+.category-title::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+}
+
+.category-title:focus {
+    outline: none;
+}
+
+.category > .title > .arrow-up {
+    margin: auto;
+    margin-right: 20px;
+    vertical-align: baseline;
+    width: 40px;
+    height: 40px;
+}
+
+.category > .title > .arrow-down {
+    margin: auto;
+    margin-right: 20px;
+    vertical-align: baseline;
+    width: 40px;
+    height: 40px;
+}
+
+
+.category > .title > .delete {
+    margin: auto;
+    margin-left: 20px;
+    vertical-align: baseline;
+    width: 40px;
+    height: 40px;
+}
+
+.category-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.task {
+    display: inline-flex;
+    justify-content: space-between;
+    font-family: Pattaya;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-bottom: 5px;
+    height: 70px;
+}
+
+.task > .title {
+    background-color: inherit;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.right-part {
+    background-color: inherit;
+    border-radius: inherit;
+    display: inline-flex;
+}
+
+.right-part > .assigned-user {
+    background-color: inherit;
+    width: 60px;
+    height: 60px;
+    align-self: center;
+}
+
+.right-part > .state-container  {
+    border: solid;
+    border-width: 2px;
+    height: 100%;
+    width: 150px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.right-part > .state-container.pending {
+    background-color: #00BED1;
+}
+
+.right-part > .state-container.en-cours {
+    background-color: #F9B271;
+}
+
+.right-part > .state-container.finis {
+    background-color: #23DAB8;
+}
+
+.right-part > .state-container.bloque {
+    background-color: #F97171;
+}
+
+.right-part > .state-container > .state {
+    background-color: inherit;
+    margin-right: 5px;
+    margin-top: 30px;
+}
+
+.right-part > .delete-container {
+    background-color: #F97171;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.right-part > .delete-container > .delete {
+    background-color: inherit;
+    border-radius: inherit;
+    width: 70px;
+    height: 70px;
+}
+
+.category-content > .add-container {
+    height: 70px;
+    width: 70px;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 5%;
+}
+
+.category-content >.add-container > .add {
+    background-color: inherit;
+    border-radius: inherit;
+    width: 70px;
+    height: 70px;
+}
+
+.new-category {
+    background-color: white;
+    font-family: Pattaya;
+    font-style: normal;
+    font-weight: normal;
+    color: black;
+    font-size: 25px;
+    border: none;
+    border-radius: 8px;
+    width: 230px;
+    height: 50px;
+    padding: 5px;
+    text-align: center;
+    margin: auto;
+    margin-top: 60px;
+    margin-left: 40px;
+}
+
+.new-category:focus {
+    outline: none;
+}
+
+.new-category:hover {
+    background-color: #c4c4c4;
+}

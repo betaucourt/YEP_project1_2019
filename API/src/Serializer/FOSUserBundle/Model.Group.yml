@@ -1,0 +1,5 @@
+FOS\UserBundle\Model\Group:
+    exclusion_policy:       ALL
+    properties:
+        name:
+            expose:         true

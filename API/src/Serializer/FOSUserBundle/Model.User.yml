@@ -1,0 +1,24 @@
+FOS\UserBundle\Model\User:
+    exclusion_policy:       ALL
+    properties:
+        email:
+            expose:         true
+            groups:         ['fillable', 'whoami', 'getUsers', 'getUser']
+        emailCanonical:
+            groups:         ['whoami', 'getUser']
+        enabled:
+            expose:         true
+            groups:         ['fillable', 'whoami', 'getUsers', 'getUser']
+        lastLogin:
+            expose:         true
+            groups:         ['whoami', 'getUser']
+            read_only:      true
+        username:
+            expose:         true
+            groups:         ['get_project', 'get_tickets', 'whoami', 'getUsers', 'getUser']
+        usernameCanonical:
+            groups:         ['whoami', 'getUser']
+        roles:
+            groups:         ['fillable', 'whoami', 'getUser', 'getUsers']
+            type:           array<string>
+        max-depth:          2

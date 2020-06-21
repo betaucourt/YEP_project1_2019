@@ -1,0 +1,105 @@
+.name-container {
+    background-color: inherit;
+    border: solid;
+    border-radius: 8px;
+    border-color: gray;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.name {
+    background-color: inherit;
+    width: 100%;
+    padding-left: 10px;
+    border: none;
+    font-family: Pattaya;
+    font-style: normal;
+    font-weight: normal;
+    color: black;
+    font-size: 20px;
+}
+
+.name:focus {
+    outline: none;
+}
+
+.text-container {
+    background-color: inherit;
+    border: solid;
+    border-radius: 8px;
+    border-color: gray;
+    padding: 5px;
+}
+
+.description {
+    background-color: inherit;
+    width: 100%;
+    padding-left: 10px;
+    border: none;
+    font-family: Pattaya;
+    font-style: normal;
+    font-weight: normal;
+    color: black;
+    font-size: 20px;
+}
+
+.description:focus {
+    outline: none;
+}
+
+.members {
+    background-color: inherit;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.members > div {
+    background-color: inherit;
+    display: inline-flex;
+}
+
+.members p {
+    background-color: inherit;
+    font-family: Pattaya;
+    font-style: normal;
+    font-weight: normal;
+    color: black;
+    font-size: 25px;
+}
+
+.members > .avatar {
+    background-color: inherit;
+    height: 50px;
+    width: 50px;
+}
+
+.button-container {
+    background-color: inherit;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    background-color: inherit;
+    font-family: Pattaya;
+    font-style: normal;
+    font-weight: normal;
+    color: black;
+    font-size: 25px;
+    border: solid;
+    border-radius: 8px;
+    width: 150px;
+    padding: 5px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.button:hover {
+    background-color: #c4c4c4;
+}

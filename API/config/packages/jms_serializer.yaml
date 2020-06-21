@@ -1,0 +1,16 @@
+jms_serializer:
+    metadata:
+        debug:                          "%kernel.debug%"
+        directories:
+            FOSOAuthServerBundle:
+                namespace_prefix:       "FOS\\OAuthServerBundle"
+                path:                   "%kernel.root_dir%/Serializer/FOSOAuthServerBundle"
+            FOSUserBundle:
+                namespace_prefix:       "FOS\\UserBundle"
+                path:                   "%kernel.root_dir%/Serializer/FOSUserBundle"
+            FOSRestBundle:
+                namespace_prefix:       "FOS\\RestBundle"
+                path:                   "%kernel.root_dir%/Serializer/FOSRestBundle"
+    default_context:
+        serialization:
+            enable_max_depth_checks:    true

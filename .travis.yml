@@ -1,0 +1,29 @@
+branches:
+  only:
+    - dev
+language: node_js
+node_js:
+- node
+addons:
+  ssh_known_hosts: git.epitech.eu
+warnings_are_errors: false
+before_install:
+  - .travis/10_prebuild.sh $WEBHOOK_URL
+script:
+- echo 'git.epitech.eu,163.5.42.53 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFaM0VzHyyfdlVU43JdzwPKPwPyQ4SigxblHQpFP9GXP' >> $HOME/.ssh/known_hosts
+#- cd server
+#- npm install
+#- npm run test
+#- cd ..
+#- cd wa-client
+#- npm install
+#- npm run build
+#- npm run test
+#- cd ..
+
+after_failure:
+  - .travis/40_postbuild.sh failure $WEBHOOK_URL $BUILD_OUTPUT_URL
+
+after_success:
+  - .travis/push.sh
+  - .travis/40_postbuild.sh success $WEBHOOK_URL $BUILD_OUTPUT_URL
